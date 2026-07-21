@@ -103,7 +103,7 @@ export default function App() {
   const paymentBoxRef = useRef(null);
   const paymentBoxInstanceRef = useRef(null);
   const paymentAttemptRef = useRef(false);
-  const hasPayphoneCredentials = Boolean(payphoneConfig.token && payphoneConfig.storeId);
+  const hasPayphoneCredentials = Boolean(payphoneConfig.token);
 
   const currentToken = useMemo(() => {
     return getCurrentToken(expression);
@@ -354,7 +354,7 @@ export default function App() {
       service: 0,
       tip: 0,
       currency: payphoneConfig.currency,
-      storeId: payphoneConfig.storeId,
+      storeId: payphoneConfig.storeId || undefined,
       reference: payphoneConfig.reference,
       lang: 'es',
       defaultMethod: 'card',

@@ -1,3 +1,9 @@
+Integrantes:
+- Macias Bravo Melina.
+- Lizzardi Milazzo.
+
+
+
 # Calculadora Clásica con Pasarela de Pago Payphone
 
 Este proyecto es una aplicación web interactiva desarrollada con **React** y **Vite**. Cuenta con una calculadora funcional y elegante que bloquea los resultados hasta que el usuario realiza un pago exitoso a través de la pasarela de pago **Payphone**.

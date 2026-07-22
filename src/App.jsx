@@ -354,7 +354,7 @@ export default function App() {
       service: 0,
       tip: 0,
       currency: payphoneConfig.currency,
-      storeId: payphoneConfig.storeId || undefined,
+      storeId: payphoneConfig.storeId,
       reference: payphoneConfig.reference,
       lang: 'es',
       defaultMethod: 'card',
@@ -417,7 +417,7 @@ export default function App() {
                 <div className="modal-card__success-icon">✓</div>
                 <h3>¡Pago Confirmado!</h3>
                 <p>El resultado ha sido desbloqueado correctamente.</p>
-                
+
                 <div className="modal-card__details">
                   <p><strong>Operación:</strong> {window.sessionStorage.getItem(sessionKeys.expression) || expression}</p>
                   <p className="modal-card__result-highlight">
